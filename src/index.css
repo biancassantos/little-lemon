@@ -1,13 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  max-width: 1080px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Karla", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* --- HEADER --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* --- HERO --- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  gap: 1rem;
+  background-color: #495E57;
+}
+
+.hero article {
+  width: 60%;
+}
+
+.hero .img-container {
+  width: 40%;
+  height: 400px;
+  border-radius: 16px;
+  background: url('./assets/images/restaurantfood.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-family: "Markazi Text", serif;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #F4CE14;
+  margin: 0;
+}
+
+.hero .sub-title {
+  font-family: "Markazi Text", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #EDEFEE;
+  margin: 0;
+}
+
+.hero p {
+  color: #EDEFEE;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+/* --- GENERAL --- */
+button {
+  border: 0;
+  border-radius: 16px;
+  padding: 15px 25px;
+  background-color: #F4CE14;
+  color: #495E57;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .2s;
+}
+
+button:hover {
+  background-color: #EDEFEE;
+}
+
+button:active {
+  scale: .9;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+/* --- SPECIALS --- */
+.specials {
+  padding: 4rem 1.5rem;
+}
+
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #EDEFEE;
+  border-radius: 16px 16px 0px 0px;
+  overflow: hidden;
+  max-width: 260px;
+}
+
+.card img {
+  height: 40%;
+  width: 100%;
+}
+
+.card .card-text {
+  height: 60%;
+  padding: 2rem 1rem;
+}
+
+.card-text .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-text h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card-text span {
+  color: #EE9972;
+  font-weight: 600;
+}
+
+.card-text p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.card-text a {
+  color: #4F4F4F;
+  font-weight: 500;
+}
+
+/* --- TESTIMONIALS --- */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #495E57;
+  padding: 4rem 1.5rem;
+}
+
+.testimonials h2 {
+  color: #EDEFEE;
+  margin-bottom: 2rem;
+}
+
+.users-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-box {
+  background-color: #FFF;
+  width: 180px;
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+.user-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.user-header .user-img {
+  width: 40px;
+  height: 40px;
+  background-color: #EDEFEE;
+  border-radius: 16px;
+}
+
+.user-header h3, .user-box span {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* --- ABOUT --- */
+.about {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 4rem 1.5rem;
+}
+
+.about-text, .about-images {
+  width: 50%;
+}
+
+.about-text h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: none;
+  color: #F4CE14;
+  margin: 0;
+}
+
+.about-text h3 {
+  font-family: "Markazi Text", serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.about-text p {
+  text-align: justify;
+  max-width: 400px;
+}
+
+.about-images img {
+  width: 300px;
+  border-radius: 16px;
+}
+
+.about-images {
+  text-align: end;
+}
+
+.about-images .top-img {
+  margin-top: -80px;
+  margin-right: 80px;
+}
+
+/* --- FOOTER --- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: #EDEFEE;
+}
+
+.footer img {
+  width: 110px;
+}
+
+.footer h4 {
+  color: #495E57;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 680px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .header .navbar {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+  }
 }

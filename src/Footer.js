@@ -1,14 +1,23 @@
 import React from "react";
-import logo from "../public/logo.svg"
-import Nav from "./Nav";
+import "./index.css"
+import logo from "./assets/images/logo.svg"
 
 function Footer() {
     return (
-        <footer>
+        <footer className="footer">
             <img src={logo} alt="Little Lemon logo"></img>
             <div>
                 <h4>Doormat Navigation</h4>
-                <Nav />
+                <nav>
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Menu</a></li>
+                        <li><a>Reservations</a></li>
+                        <li><a>Order Online</a></li>
+                        <li><a>Login</a></li>
+                    </ul>
+                </nav>
             </div>
             <div>
                 <h4>Contact</h4>
